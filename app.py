@@ -12,24 +12,24 @@ from flask import Flask, jsonify
 
 engine = create_engine("sqlite:///hawaii.sqlite")
 
-Base = automap_base()
+# Base = automap_base()
 
-Measurement = Base.classes.measurement
-Station = Base.classes.station
-session = Session(engine)
+# Measurement = Base.classes.measurement
+# Station = Base.classes.station
+# session = Session(engine)
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route('/')
-def welcome():
-    return(
-    '''
-    Welcome to the Climate Analysis API!
-    Available Routes:
-    /api/v1.0/precipitation
-    /api/v1.0/stations
-    /api/v1.0/tobs
-    /api/v1.0/temp/start/end
-    ''')
+# @app.route('/')
+# def welcome():
+#     return(
+#     '''
+#     Welcome to the Climate Analysis API!
+#     Available Routes:
+#     /api/v1.0/precipitation
+#     /api/v1.0/stations
+#     /api/v1.0/tobs
+#     /api/v1.0/temp/start/end
+#     ''')
 
 
